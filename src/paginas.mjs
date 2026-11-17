@@ -54,7 +54,7 @@ const curtoColecao = (id) => (id === 'natal-2026' ? 'Natal' : 'Outono');
 export function inicio(d) {
   const { loja, catalogo, produtos } = d;
   const natal = catalogo.colecoes.find((c) => c.id === 'natal-2026');
-  const daNatal = d.lista.filter((p) => p.colecoes?.includes('natal-2026') && !p.sobConsulta);
+  const daNatal = d.lista.filter((p) => p.colecoes?.includes('natal-2026'));
   const destaques = ['queimador-correio-do-pai-natal', 'queimador-rena', 'queimador-pai-natal', 'queimador-biscoitos-de-natal'].map((s) => produtos[s]).filter(Boolean);
   const sub = { queimadores: `${d.lista.filter((p) => p.categoria === 'queimadores').length} modelos`, 'wax-melts': `${catalogo.aromas.length} aromas`, velas: `${d.lista.filter((p) => p.categoria === 'velas').length} velas`, decoracao: `${d.lista.filter((p) => p.categoria === 'decoracao').length} peças` };
   const a = catalogo.aromas.find((x) => x.id === 'sunday-in-cashmere');
