@@ -1,0 +1,15 @@
+{
+  "nome": "Sagrada Família",
+  "categoria": "decoracao",
+  "colecoes": [
+    "natal-2026"
+  ],
+  "sobConsulta": true,
+  "frase": "A pureza do Natal numa só peça, para qualquer cantinho da casa.",
+  "fotos": [
+    "natal-sagrada-familia"
+  ],
+  "ordem": 60,
+  "publicado": true,
+  "destaque": false
+}

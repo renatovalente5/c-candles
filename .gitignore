@@ -1,0 +1,8 @@
+_cliente/
+.cache/
+_site/
+node_modules/
+.DS_Store
+propostas/_site/
+propostas/capturas/
+*.tmp

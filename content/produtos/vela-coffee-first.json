@@ -1,0 +1,20 @@
+{
+  "nome": "Vela Coffee First",
+  "categoria": "velas",
+  "colecoes": [
+    "outono-2026"
+  ],
+  "preco": 13.5,
+  "frase": "Café acabado de torrar com caramelo e baunilha, para transformar qualquer manhã num momento especial.",
+  "fotos": [
+    "vela-coffee-first"
+  ],
+  "aroma": "coffee-first",
+  "peso": "180 g",
+  "detalhes": [
+    "Cerca de 30 horas de queima."
+  ],
+  "destaque": true,
+  "ordem": 20,
+  "publicado": true
+}

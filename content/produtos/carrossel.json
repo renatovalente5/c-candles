@@ -1,0 +1,16 @@
+{
+  "nome": "Carrossel",
+  "categoria": "decoracao",
+  "colecoes": [
+    "natal-2026"
+  ],
+  "sobConsulta": true,
+  "frase": "Inspirado nas cidades iluminadas: para o quarto dos mais pequenos ou para uma futura mamã.",
+  "fotos": [
+    "natal-carrossel",
+    "natal-carrossel-2"
+  ],
+  "ordem": 70,
+  "publicado": true,
+  "destaque": false
+}

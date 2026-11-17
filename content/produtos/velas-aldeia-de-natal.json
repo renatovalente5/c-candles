@@ -1,0 +1,16 @@
+{
+  "nome": "Velas Aldeia de Natal",
+  "categoria": "velas",
+  "colecoes": [
+    "natal-2026"
+  ],
+  "sobConsulta": true,
+  "frase": "Casinhas, pinheiros e um boneco de neve em relevo: a peça mais encantadora do Natal.",
+  "fotos": [
+    "natal-aldeia",
+    "natal-aldeia-2"
+  ],
+  "ordem": 100,
+  "publicado": true,
+  "destaque": false
+}

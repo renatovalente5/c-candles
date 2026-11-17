@@ -1,0 +1,21 @@
+{
+  "nome": "Kit Pinta a tua Abóbora",
+  "categoria": "decoracao",
+  "colecoes": [
+    "outono-2026"
+  ],
+  "preco": 12.6,
+  "frase": "Uma abóbora para pintar, 4 cores à escolha e um pincel. O plano perfeito para um domingo com amigos.",
+  "fotos": [
+    "kit-abobora"
+  ],
+  "personalizacao": {
+    "rotulo": "As 4 cores que preferes",
+    "ajuda": "Por exemplo: rosa, creme, verde e dourado.",
+    "obrigatoria": false,
+    "max": 60
+  },
+  "ordem": 10,
+  "publicado": true,
+  "destaque": false
+}

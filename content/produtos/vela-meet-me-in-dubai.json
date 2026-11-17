@@ -1,0 +1,20 @@
+{
+  "nome": "Vela Meet Me in Dubai",
+  "categoria": "velas",
+  "colecoes": [
+    "outono-2026"
+  ],
+  "preco": 13.5,
+  "frase": "Amêndoa, pistácio, chocolate e cereja: o Dubai sem saíres de casa.",
+  "fotos": [
+    "vela-meet-me-in-dubai"
+  ],
+  "aroma": "meet-me-in-dubai",
+  "peso": "180 g",
+  "detalhes": [
+    "Cerca de 30 horas de queima."
+  ],
+  "destaque": false,
+  "ordem": 40,
+  "publicado": true
+}

@@ -1,0 +1,15 @@
+{
+  "nome": "Anjinhos",
+  "categoria": "decoracao",
+  "colecoes": [
+    "natal-2026"
+  ],
+  "sobConsulta": true,
+  "frase": "Oferecer um anjinho é oferecer carinho, proteção e ternura.",
+  "fotos": [
+    "natal-anjinhos"
+  ],
+  "ordem": 50,
+  "publicado": true,
+  "destaque": false
+}

@@ -1,0 +1,15 @@
+{
+  "nome": "Velas Rena",
+  "categoria": "velas",
+  "colecoes": [
+    "natal-2026"
+  ],
+  "sobConsulta": true,
+  "frase": "Renas de cera com um pequeno sininho, para decorar ou oferecer.",
+  "fotos": [
+    "natal-renas"
+  ],
+  "ordem": 90,
+  "publicado": true,
+  "destaque": false
+}

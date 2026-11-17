@@ -1,0 +1,20 @@
+{
+  "nome": "Vela Caramel & Chill",
+  "categoria": "velas",
+  "colecoes": [
+    "outono-2026"
+  ],
+  "preco": 13.5,
+  "frase": "Laranja, baunilha e caramelo quente para uma noite de sofá. Só mais um episódio.",
+  "fotos": [
+    "vela-caramel-and-chill"
+  ],
+  "aroma": "caramel-and-chill",
+  "peso": "180 g",
+  "detalhes": [
+    "Cerca de 30 horas de queima."
+  ],
+  "destaque": false,
+  "ordem": 30,
+  "publicado": true
+}

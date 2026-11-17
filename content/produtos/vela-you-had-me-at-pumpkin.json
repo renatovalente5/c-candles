@@ -1,0 +1,20 @@
+{
+  "nome": "Vela You Had Me at Pumpkin",
+  "categoria": "velas",
+  "colecoes": [
+    "outono-2026"
+  ],
+  "preco": 13.5,
+  "frase": "Abóbora, canela e baunilha para acender ao fim do dia. Não tenhas pena de a acender!",
+  "fotos": [
+    "vela-you-had-me-at-pumpkin"
+  ],
+  "aroma": "you-had-me-at-pumpkin",
+  "peso": "180 g",
+  "detalhes": [
+    "Cerca de 30 horas de queima."
+  ],
+  "destaque": false,
+  "ordem": 50,
+  "publicado": true
+}

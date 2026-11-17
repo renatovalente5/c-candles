@@ -1,0 +1,41 @@
+{
+  "nome": "Snapbar",
+  "categoria": "wax-melts",
+  "colecoes": [
+    "natal-2026",
+    "outono-2026"
+  ],
+  "preco": 4,
+  "frase": "Uma barra de 35 g dividida em quadradinhos: partes só o que precisas e descobres se aquele aroma é mesmo a tua cara.",
+  "fotos": [
+    "snap-sunday-in-cashmere",
+    "snap-coffee-first",
+    "snap-meet-me-in-dubai",
+    "snap-caramel-and-chill"
+  ],
+  "aromas": [
+    "sunday-in-cashmere",
+    "coffee-first",
+    "caramel-and-chill",
+    "meet-me-in-dubai",
+    "you-had-me-at-pumpkin",
+    "wood-you",
+    "bonjour-paris",
+    "maca-e-canela",
+    "rolo-de-canela",
+    "pinheiros-de-natal",
+    "bengala-doce",
+    "doce-tradicao",
+    "natal-silvestre",
+    "desejo-proibido",
+    "biscoitos-da-avo",
+    "bombons-de-chocolate"
+  ],
+  "peso": "35 g",
+  "detalhes": [
+    "Para usar num queimador, com uma vela de réchaud."
+  ],
+  "destaque": true,
+  "ordem": 10,
+  "publicado": true
+}

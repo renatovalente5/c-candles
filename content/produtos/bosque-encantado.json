@@ -1,0 +1,39 @@
+{
+  "nome": "Peças do Bosque Encantado",
+  "categoria": "decoracao",
+  "colecoes": [
+    "outono-2026"
+  ],
+  "preco": 2,
+  "frase": "Um esquilinho, uma pinha, uma bolota e mini abóboras para completar o teu cantinho de outono.",
+  "fotos": [
+    "outono-bosque-encantado"
+  ],
+  "opcoes": [
+    {
+      "id": "peca",
+      "nome": "Peça",
+      "valores": [
+        {
+          "nome": "Mini abóbora",
+          "suplemento": 0
+        },
+        {
+          "nome": "Esquilo",
+          "suplemento": 2
+        },
+        {
+          "nome": "Pinha",
+          "suplemento": 2.5
+        },
+        {
+          "nome": "Bolota",
+          "suplemento": 2.5
+        }
+      ]
+    }
+  ],
+  "ordem": 20,
+  "publicado": true,
+  "destaque": false
+}

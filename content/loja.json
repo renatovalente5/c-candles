@@ -1,0 +1,49 @@
+{
+  "nome": "C'Candles",
+  "slogan": "Para quem quer cada ocasião inesquecível.",
+  "descricao": "Queimadores, wax melts, velas aromáticas e peças decorativas feitas à mão em Oliveira de Azeméis, e lembranças personalizadas para batizados, comunhões e casamentos.",
+  "dona": "Cristiana Moreira",
+  "localidade": "Oliveira de Azeméis",
+  "instagram": "c_candles.pt",
+  "whatsapp": "351938142706",
+  "desde": "2023",
+  "entrega": {
+    "prazo": "até 5 dias úteis",
+    "gratisAPartirDe": null,
+    "zonas": [
+      {
+        "id": "continente",
+        "nome": "Portugal continental",
+        "portes": 4.9
+      },
+      {
+        "id": "ilhas",
+        "nome": "Açores e Madeira",
+        "portes": 7.9
+      },
+      {
+        "id": "mao",
+        "nome": "Entrega em mão em Oliveira de Azeméis",
+        "portes": 0
+      }
+    ],
+    "porConfirmar": true
+  },
+  "pagamentos": {
+    "modo": "online",
+    "meios": [
+      "MB WAY",
+      "Multibanco",
+      "Cartão",
+      "Apple Pay",
+      "Google Pay"
+    ]
+  },
+  "empresa": {
+    "nome": null,
+    "nif": null,
+    "morada": null,
+    "email": null,
+    "telefone": "938142706"
+  }
+}

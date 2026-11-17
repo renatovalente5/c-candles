@@ -1,0 +1,16 @@
+{
+  "nome": "Velas Árvore de Natal",
+  "categoria": "velas",
+  "colecoes": [
+    "natal-2026"
+  ],
+  "sobConsulta": true,
+  "frase": "As famosas árvores de Natal em vela, em vários tamanhos e cores. Escolhes a cor e o cheirinho.",
+  "fotos": [
+    "natal-arvores",
+    "natal-arvores-2"
+  ],
+  "ordem": 70,
+  "publicado": true,
+  "destaque": false
+}

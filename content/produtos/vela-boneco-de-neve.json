@@ -1,0 +1,15 @@
+{
+  "nome": "Vela Boneco de Neve",
+  "categoria": "velas",
+  "colecoes": [
+    "natal-2026"
+  ],
+  "sobConsulta": true,
+  "frase": "Um boneco de neve de cera para dar um toque mágico à mesa de Natal.",
+  "fotos": [
+    "natal-boneco-de-neve"
+  ],
+  "ordem": 80,
+  "publicado": true,
+  "destaque": false
+}

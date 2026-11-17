@@ -1,0 +1,16 @@
+{
+  "nome": "Casinhas de luz",
+  "categoria": "decoracao",
+  "colecoes": [
+    "natal-2026"
+  ],
+  "sobConsulta": true,
+  "frase": "Casinhas de janelas recortadas: acende uma vela lá dentro e deixa a luz contar a história.",
+  "fotos": [
+    "natal-casinhas",
+    "natal-casinhas-2"
+  ],
+  "ordem": 80,
+  "publicado": true,
+  "destaque": false
+}

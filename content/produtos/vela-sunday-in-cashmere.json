@@ -1,0 +1,21 @@
+{
+  "nome": "Vela Sunday in Cashmere",
+  "categoria": "velas",
+  "colecoes": [
+    "outono-2026"
+  ],
+  "preco": 13.5,
+  "frase": "Um dos aromas mais pedidos, agora em vela: figo, cashmere, sândalo e âmbar para os domingos sem planos.",
+  "fotos": [
+    "vela-sunday-in-cashmere",
+    "vela-sunday-in-cashmere-2"
+  ],
+  "aroma": "sunday-in-cashmere",
+  "peso": "180 g",
+  "detalhes": [
+    "Cerca de 30 horas de queima."
+  ],
+  "destaque": true,
+  "ordem": 10,
+  "publicado": true
+}

@@ -1,0 +1,414 @@
+{
+  "categorias": [
+    {
+      "id": "queimadores",
+      "nome": "Queimadores",
+      "frase": "Casinhas, abóboras, nuvens e o Pai Natal: escolhe o teu e o aroma que vai com ele.",
+      "foto": "natal-pai-natal"
+    },
+    {
+      "id": "wax-melts",
+      "nome": "Wax melts",
+      "frase": "Snapbar e figurinhas de cera perfumada, em 16 aromas.",
+      "foto": "snap-meet-me-in-dubai"
+    },
+    {
+      "id": "velas",
+      "nome": "Velas",
+      "frase": "Velas em copo para acender ao fim do dia e velas de figura para decorar.",
+      "foto": "vela-caramel-and-chill"
+    },
+    {
+      "id": "decoracao",
+      "nome": "Decoração",
+      "frase": "Peças para os cantinhos da casa, de cada estação.",
+      "foto": "natal-casinhas"
+    }
+  ],
+  "colecoes": [
+    {
+      "id": "natal-2026",
+      "nome": "A Essência do Natal",
+      "etiqueta": "Coleção de Natal 2026",
+      "tema": "natal",
+      "limitada": true,
+      "frase": "O Natal mais cheiroso de sempre: queimadores novos e oito aromas, feitos em quantidades limitadas.",
+      "foto": "natal-correio",
+      "fotos": [
+        "natal-correio",
+        "natal-casinha",
+        "natal-pai-natal",
+        "natal-biscoitos"
+      ]
+    },
+    {
+      "id": "outono-2026",
+      "nome": "A Magia do Outono",
+      "etiqueta": "Coleção de Outono 2026",
+      "tema": "outono",
+      "limitada": false,
+      "frase": "Abóboras, castanhas e casinhas de bosque para os dias de manta.",
+      "foto": "outono-abobora",
+      "fotos": [
+        "outono-abobora",
+        "outono-casa-do-bosque",
+        "vela-caramel-and-chill",
+        "snap-wood-you"
+      ]
+    }
+  ],
+  "aromas": [
+    {
+      "id": "sunday-in-cashmere",
+      "nome": "Sunday in Cashmere",
+      "colecao": "outono-2026",
+      "cor": "#D8C6B4",
+      "frase": "O prazer de não ter pressa: o aconchego do cashmere, a doçura do figo e o sândalo cremoso.",
+      "piramide": {
+        "saida": [
+          "Noz-moscada",
+          "Néctar de alperce",
+          "Folha de figueira",
+          "Chá branco"
+        ],
+        "coracao": [
+          "Madeira de cashmere",
+          "Coumarin gourmand",
+          "Raiz de violeta",
+          "Figo seco"
+        ],
+        "fundo": [
+          "Sândalo cremoso",
+          "Almíscar branco",
+          "Musgo de carvalho",
+          "Âmbar dourado"
+        ]
+      },
+      "foto": "snap-sunday-in-cashmere"
+    },
+    {
+      "id": "coffee-first",
+      "nome": "Coffee First",
+      "colecao": "outono-2026",
+      "cor": "#8B6A55",
+      "frase": "Primeiro, café. O resto pode esperar.",
+      "piramide": {
+        "saida": [
+          "Caramelo",
+          "Café"
+        ],
+        "coracao": [
+          "Manteiga",
+          "Noz"
+        ],
+        "fundo": [
+          "Baunilha",
+          "Açúcar queimado"
+        ]
+      },
+      "foto": "snap-coffee-first"
+    },
+    {
+      "id": "caramel-and-chill",
+      "nome": "Caramel & Chill",
+      "colecao": "outono-2026",
+      "cor": "#D9A86C",
+      "frase": "Uma noite de sofá, manta e pipocas, com caramelo quente no ar.",
+      "piramide": {
+        "saida": [
+          "Laranja"
+        ],
+        "coracao": [
+          "Rosa",
+          "Anis"
+        ],
+        "fundo": [
+          "Baunilha",
+          "Caramelo"
+        ]
+      },
+      "foto": "snap-caramel-and-chill"
+    },
+    {
+      "id": "meet-me-in-dubai",
+      "nome": "Meet Me in Dubai",
+      "colecao": "outono-2026",
+      "cor": "#A9B38A",
+      "frase": "Uma viagem ao Dubai sem saíres de casa: guloso, sofisticado e impossível de ignorar.",
+      "piramide": {
+        "saida": [
+          "Amêndoa",
+          "Pistácio"
+        ],
+        "coracao": [
+          "Chocolate",
+          "Cereja"
+        ],
+        "fundo": [
+          "Creme de baunilha"
+        ]
+      },
+      "foto": "snap-meet-me-in-dubai"
+    },
+    {
+      "id": "you-had-me-at-pumpkin",
+      "nome": "You Had Me at Pumpkin",
+      "colecao": "outono-2026",
+      "cor": "#E2A06A",
+      "frase": "Abóbora, um toque de canela e a doçura da baunilha e do açúcar.",
+      "notas": [
+        "Abóbora",
+        "Canela",
+        "Baunilha",
+        "Açúcar"
+      ],
+      "foto": "snap-you-had-me-at-pumpkin"
+    },
+    {
+      "id": "wood-you",
+      "nome": "Wood You?",
+      "colecao": "outono-2026",
+      "cor": "#A47A5E",
+      "frase": "Castanhas acabadas de assar, canela e o crepitar do fogo.",
+      "piramide": {
+        "saida": [
+          "Cereja doce",
+          "Amêndoa"
+        ],
+        "coracao": [
+          "Castanha assada",
+          "Canela"
+        ],
+        "fundo": [
+          "Caramelo",
+          "Baunilha"
+        ]
+      },
+      "foto": "snap-wood-you"
+    },
+    {
+      "id": "bonjour-paris",
+      "nome": "Bonjour Paris",
+      "colecao": "outono-2026",
+      "cor": "#E8CFA0",
+      "frase": "O cheirinho de uma boulangerie parisiense, sem saíres do sofá.",
+      "piramide": {
+        "saida": [
+          "Tangerina"
+        ],
+        "coracao": [
+          "Acorde de croissant"
+        ],
+        "fundo": [
+          "Açúcar de confeiteiro",
+          "Baunilha amanteigada"
+        ]
+      },
+      "foto": "snap-bonjour-paris"
+    },
+    {
+      "id": "maca-e-canela",
+      "nome": "Maçã & Canela",
+      "colecao": "outono-2026",
+      "cor": "#C7765F",
+      "frase": "Maçãs acabadas de cortar e um bolo a sair do forno.",
+      "piramide": {
+        "saida": [
+          "Maçã frutada"
+        ],
+        "coracao": [
+          "Canela quente e especiada"
+        ],
+        "fundo": [
+          "Uma doçura envolvente"
+        ]
+      },
+      "foto": "snap-maca-e-canela"
+    },
+    {
+      "id": "rolo-de-canela",
+      "nome": "Rolo de Canela",
+      "colecao": "natal-2026",
+      "cor": "#B9825B",
+      "frase": "Rolos de canela acabados de sair do forno: canela, amêndoa, baunilha amanteigada e pão quente.",
+      "notas": [
+        "Canela",
+        "Amêndoa",
+        "Baunilha amanteigada",
+        "Pão quente"
+      ]
+    },
+    {
+      "id": "pinheiros-de-natal",
+      "nome": "Pinheiros de Natal",
+      "colecao": "natal-2026",
+      "cor": "#5E7B63",
+      "frase": "Agulhas de pinheiro com framboesa e laranja, especiarias e um fundo de caramelo e madeira.",
+      "notas": [
+        "Agulhas de pinheiro",
+        "Framboesa",
+        "Laranja",
+        "Especiarias",
+        "Caramelo",
+        "Madeira"
+      ]
+    },
+    {
+      "id": "bengala-doce",
+      "nome": "Bengala Doce",
+      "colecao": "natal-2026",
+      "cor": "#D98C95",
+      "frase": "Hortelã-pimenta e limão, um toque de framboesa e uma doçura de baunilha com tonka.",
+      "notas": [
+        "Hortelã-pimenta",
+        "Limão",
+        "Framboesa",
+        "Baunilha",
+        "Tonka"
+      ]
+    },
+    {
+      "id": "doce-tradicao",
+      "nome": "Doce Tradição",
+      "colecao": "natal-2026",
+      "cor": "#B07A4F",
+      "frase": "Bolo quente, canela, passas douradas e frutos secos: uma sobremesa de Natal pela casa.",
+      "notas": [
+        "Bolo quente",
+        "Canela",
+        "Passas douradas",
+        "Frutos secos",
+        "Açúcar mascavado",
+        "Baunilha"
+      ]
+    },
+    {
+      "id": "natal-silvestre",
+      "nome": "Natal Silvestre",
+      "colecao": "natal-2026",
+      "cor": "#B5545F",
+      "frase": "Framboesa, morango e groselha com notas florais. Frutado, doce e sofisticado.",
+      "notas": [
+        "Framboesa",
+        "Morango",
+        "Groselha",
+        "Notas florais",
+        "Baunilha",
+        "Almíscar branco"
+      ]
+    },
+    {
+      "id": "desejo-proibido",
+      "nome": "Desejo Proibido",
+      "colecao": "natal-2026",
+      "cor": "#7B2E3A",
+      "frase": "Frutos silvestres, vinho Merlot e especiarias. Intenso, misterioso e irresistível.",
+      "notas": [
+        "Frutos silvestres",
+        "Vinho Merlot",
+        "Especiarias",
+        "Baunilha",
+        "Âmbar"
+      ]
+    },
+    {
+      "id": "biscoitos-da-avo",
+      "nome": "Biscoitos da Avó",
+      "colecao": "natal-2026",
+      "cor": "#C9A27A",
+      "frase": "Biscoitos acabados de sair do forno: amêndoa, canela, gengibre e leite.",
+      "notas": [
+        "Amêndoa",
+        "Canela",
+        "Gengibre",
+        "Leite",
+        "Baunilha"
+      ]
+    },
+    {
+      "id": "bombons-de-chocolate",
+      "nome": "Bombons de Chocolate",
+      "colecao": "natal-2026",
+      "cor": "#6E4A3A",
+      "frase": "Uma caixa de bombons acabada de abrir: chocolate de leite, baunilha e caramelo.",
+      "notas": [
+        "Chocolate de leite",
+        "Baunilha",
+        "Caramelo",
+        "Chocolate negro",
+        "Frutos secos"
+      ]
+    }
+  ],
+  "ocasioes": [
+    {
+      "id": "batizado",
+      "nome": "Batizado",
+      "frase": "Velas em frasco, ursinhos e leões em caixinha e conchas de batismo, com o nome e a data.",
+      "fotos": [
+        "lem-batizado-diego",
+        "lem-batizado-lucas",
+        "lem-batizado-concha",
+        "lem-batizado-noah"
+      ]
+    },
+    {
+      "id": "comunhao",
+      "nome": "Comunhão e Profissão de Fé",
+      "frase": "Ímanes com flor, anjinhos em redoma e velas em frasco com o nome de cada um.",
+      "fotos": [
+        "lem-comunhao-imanes",
+        "lem-anjinhos-redoma",
+        "lem-comunhao-bianca",
+        "lem-comunhao-mesa"
+      ]
+    },
+    {
+      "id": "padrinhos",
+      "nome": "Padrinhos",
+      "frase": "Caixas com flores de vela e a plaquinha «Querida Madrinha», ou o pedido «Aceitam ser os meus padrinhos?».",
+      "fotos": [
+        "lem-padrinhos-madrinha",
+        "lem-padrinhos-pedido",
+        "lem-padrinhos-azul",
+        "lem-padrinhos-caixas"
+      ]
+    },
+    {
+      "id": "casamento",
+      "nome": "Casamento",
+      "frase": "Rosas de vela em caixinhas brancas e velas em tule, nas cores do vosso dia.",
+      "fotos": [
+        "lem-casamento-rosas",
+        "lem-casamento-tule"
+      ]
+    },
+    {
+      "id": "baby-shower",
+      "nome": "Baby shower e chá de revelação",
+      "frase": "Ursinhos de cera nas cores do tema, em caixinhas com laço.",
+      "fotos": [
+        "lem-babyshower-ursinhos"
+      ]
+    },
+    {
+      "id": "professores",
+      "nome": "Professores e educadoras",
+      "frase": "Um obrigado no fim do ano letivo: caixinhas com uma rosa de vela e a frase que escolheres.",
+      "fotos": [
+        "lem-professores"
+      ]
+    },
+    {
+      "id": "datas",
+      "nome": "Dia da Mãe e datas especiais",
+      "frase": "Raminhos de flores de vela em caixa, para a Mãe, os Namorados ou quem quiseres mimar.",
+      "fotos": [
+        "lem-maes-raminho",
+        "lem-maes-raminho-2",
+        "lem-namorados",
+        "lem-girassois"
+      ]
+    }
+  ]
+}
