@@ -331,7 +331,7 @@ export function produto(d, p) {
       <ul class="ficha__entrega">
         <li>${icone('carrinha', 'icone icone--p')}<span>Envio para todo o país em ${esc(loja.entrega.prazo)}. Portes desde ${euro(Math.min(...loja.entrega.zonas.filter((z) => z.portes > 0).map((z) => z.portes)))}.</span></li>
         <li>${icone('local', 'icone icone--p')}<span>Entrega em mão em Oliveira de Azeméis, sem portes.</span></li>
-        <li>${icone('troca', 'icone icone--p')}<span>14 dias para devolver. <a href="${url('/envios-e-devolucoes/')}">Envios e devoluções</a></span></li>
+        <li>${icone('troca', 'icone icone--p')}<span>Tens 14 dias para desistir depois de receberes. <a href="${url('/envios-e-devolucoes/')}">Envios e devoluções</a></span></li>
       </ul>
       ${detalhes.length ? `<ul class="ficha__detalhes">${detalhes.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
       ${seguranca}
@@ -435,7 +435,7 @@ export function finalizar(d) {
     </fieldset>
     <div class="finalizar__pagar">
       <button class="botao botao--largo botao--grande" type="submit" data-pagar>Pagar <span data-total-final></span></button>
-      <p class="finalizar__letra">Ao pagar aceitas os <a href="${url('/termos/')}">termos e condições</a>. Tens 14 dias para devolver, exceto nas peças personalizadas (<a href="${url('/envios-e-devolucoes/')}">envios e devoluções</a>).</p>
+      <p class="finalizar__letra">Ao pagar aceitas os <a href="${url('/termos/')}">termos e condições</a>. Tens 14 dias para desistir da compra, exceto nas peças personalizadas (<a href="${url('/envios-e-devolucoes/')}">envios e devoluções</a>).</p>
     </div>
   </form>
   <aside class="finalizar__resumo" data-resumo-finalizar>

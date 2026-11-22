@@ -69,7 +69,7 @@ ${notaExemplo}
 <p>Diz-nos logo, com uma fotografia, e resolvemos. ${textoGarantia({ feitoAMao: true })}</p>
 <h2>Como pedir</h2>
 <p>Por <a href="${whatsapp(loja.whatsapp)}" rel="noopener">WhatsApp</a>, por <a href="https://ig.me/m/${loja.instagram}" rel="noopener">mensagem no Instagram</a> ou por email para ${e.email ? `<a href="mailto:${esc(e.email)}">${esc(e.email)}</a>` : porConfirmar('email')}. Também podes usar este formulário:</p>
-<pre>${esc(FORMULARIO_LIVRE_RESOLUCAO)}</pre>`, 'Portes, prazos de envio e devoluções na C’Candles: 14 dias para devolver as peças sem personalização.', { indexar: false }),
+<pre>${esc(FORMULARIO_LIVRE_RESOLUCAO)}</pre>`, 'Portes, prazos de envio e devoluções na C’Candles: 14 dias para desistir das peças sem personalização.', { indexar: false }),
 
     texto('/termos/', 'Termos e condições', 'As condições das compras na loja online da C’Candles.', `
 <h2>1. Quem vende</h2>
