@@ -250,9 +250,14 @@ async function ligarFicha(form) {
   const precoEl = $('[data-preco]');
   const texto = $('#texto', form);
   const contador = $('[data-contador]', form);
-  const trocaFoto = slug === 'snapbar';
+  // A primeira fotografia muda para a snapbar: na ficha da snapbar (a do aroma) e nos queimadores quando se escolhe «Snapbar»
+  const eSnap = (v) => /^snapbar/i.test(v?.nome || '');
+  const trocaFoto = slug === 'snapbar' || ops.some((o) => o.valores.some(eSnap));
   const primeira = $('.galeria__foto', document);
   const primeiraOriginal = primeira?.innerHTML;
+  let fotoMostrada = '';
+  const minis = [...form.querySelectorAll('[data-mini-snap]')];
+  const miniOriginal = minis[0]?.getAttribute('src');
 
   const escolha = () => ({
     opcoes: Object.fromEntries(ops.map((o) => [o.id, Number(form.querySelector(`input[name="op-${o.id}"]:checked`)?.value ?? 0)])),
@@ -280,11 +285,17 @@ async function ligarFicha(form) {
         notas.hidden = false;
       } else notas.hidden = true;
     }
+    for (const m of minis) { const s = a?.foto || miniOriginal; if (m.getAttribute('src') !== s) m.src = s; }
     if (trocaFoto && primeira) {
-      if (a?.foto) { primeira.innerHTML = `<img src="${esc(a.foto)}" alt="Snapbar ${esc(a.nome)}" width="720" height="900" style="width:100%;height:100%;object-fit:cover">`; }
-      else if (primeira.innerHTML !== primeiraOriginal) primeira.innerHTML = primeiraOriginal;
-      const faixa = $('[data-faixa]');
-      if (faixa && faixa.scrollLeft) faixa.scrollTo({ left: 0 });
+      const comSnap = slug === 'snapbar' || ops.some((o) => eSnap(o.valores[e.opcoes[o.id]]));
+      const src = !comSnap ? '' : a?.foto || (slug === 'snapbar' ? '' : cat.fotoSnapbar || '');
+      if (src !== fotoMostrada) {
+        if (src) primeira.innerHTML = `<img src="${esc(src)}" alt="Snapbar${a?.foto ? ' ' + esc(a.nome) : ''}" width="720" height="900" style="width:100%;height:100%;object-fit:cover">`;
+        else primeira.innerHTML = primeiraOriginal;
+        fotoMostrada = src;
+        const faixa = $('[data-faixa]');
+        if (faixa && faixa.scrollLeft) faixa.scrollTo({ left: 0 });
+      }
     }
     if (a) { erroAroma && (erroAroma.hidden = true); grupoAroma?.classList.remove('campo--erro'); }
   }
