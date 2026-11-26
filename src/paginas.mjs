@@ -144,7 +144,7 @@ export function inicio(d) {
 const LUGAR = `<script>(function(){try{var l=JSON.parse(sessionStorage.getItem('cc:lugar')||'null');if(!l||l.para!==location.pathname||Date.now()-l.t>15000)return;var f=document.querySelector('[data-separadores]');if(!f)return;document.documentElement.dataset.lugar='1';var por=function(){var r=f.getBoundingClientRect();var h=document.documentElement;var s=h.style.scrollBehavior;h.style.scrollBehavior='auto';window.scrollTo(0,r.top+window.scrollY-l.topo);h.style.scrollBehavior=s;var u=f.querySelector('ul');if(u)u.scrollLeft=l.esq||0;};por();var parar=function(){por=function(){};};['wheel','touchstart','keydown','mousedown'].forEach(function(e){addEventListener(e,parar,{once:true,passive:true});});document.addEventListener('DOMContentLoaded',function(){por();});addEventListener('load',function(){por();});if(document.fonts)document.fonts.ready.then(function(){por();});}catch(e){}})();</script>`;
 
 function separadores(catalogo, atual) {
-  const itens = [['Tudo', '/loja/', null], ...catalogo.categorias.map((c) => [c.nome, `/loja/${c.id}/`, c.id])];
+  const itens = [['Tudo', '/loja/', null], ['Natal', '/natal/', 'natal'], ...catalogo.categorias.map((c) => [c.nome, `/loja/${c.id}/`, c.id])];
   return `<nav class="separadores" data-separadores aria-label="Categorias"><ul>${itens.map(([n, h, id]) => `<li><a href="${url(h)}"${id === atual ? ' aria-current="page"' : ''}>${esc(n)}</a></li>`).join('')}</ul></nav>`;
 }
 const ordenar = (lista) => [...lista].sort((a, b) => (a.sobConsulta ? 1 : 0) - (b.sobConsulta ? 1 : 0) || (a.ordem ?? 500) - (b.ordem ?? 500));
@@ -256,13 +256,15 @@ export function produto(d, p) {
   ${fotosP.length > 1 ? `<div class="galeria__nav"><span class="galeria__conta" data-conta-fotos aria-hidden="true">1/${fotosP.length}</span><div class="galeria__miniaturas">${fotosP.map((f, i) => `<button type="button" class="galeria__mini" data-ir="${i}" aria-label="Fotografia ${i + 1} de ${fotosP.length}"${i === 0 ? ' aria-current="true"' : ''}><img src="${fotoPequena(f)}" alt="" width="64" height="64" loading="lazy"></button>`).join('')}</div></div>` : ''}
 </div>`;
 
-  // As escolhas
+  // As escolhas (a opção «Snapbar» leva uma miniatura da barrinha, que muda com o aroma escolhido)
+  const fotoSnap = d.produtos.snapbar?.fotos?.[0];
   const valorTexto = (o, v, i) => {
     if (o.id === 'levar') {
       const total = base + v.suplemento;
       const soma = base + (v.nome.startsWith('Snapbar') ? 400 : v.nome.startsWith('Wax') ? 640 : 0);
       const poupa = v.suplemento && soma > total ? `<small>poupas ${euro((soma - total) / 100)}</small>` : '';
-      return `<span class="opcao__nome">${esc(v.nome)}</span><span class="opcao__preco">${euro(total / 100)}${poupa}</span>`;
+      const mini = v.nome.startsWith('Snapbar') && fotoSnap && FOTOS[fotoSnap] ? `<img class="opcao__miniatura" data-mini-snap src="${fotoPequena(fotoSnap)}" alt="" width="40" height="40" loading="lazy">` : '';
+      return `${mini}<span class="opcao__nome">${esc(v.nome)}</span><span class="opcao__preco">${euro(total / 100)}${poupa}</span>`;
     }
     return `<span class="opcao__nome">${esc(v.nome)}</span>${v.suplemento || i === 0 ? `<span class="opcao__preco">${euro((base + v.suplemento) / 100)}</span>` : ''}`;
   };

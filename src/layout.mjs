@@ -6,14 +6,23 @@ import { url, absoluto, esc, icone, logoPalavra, logoCompleto, PREVIA, BASE, wha
 
 export const VERSAO = { css: '', js: '' }; // preenchido pelo build (resumo dos ficheiros: cache do GitHub Pages)
 export const MENU = [
+  ['Natal', '/natal/'],
   ['Loja', '/loja/'],
   ['Aromas', '/aromas/'],
   ['Lembranças', '/lembrancas/'],
   ['Sobre', '/sobre/'],
 ];
+// No telemóvel, em vez do botão «Menu»: uma barra de secções por baixo do logótipo (pedido da Cristiana, 26 nov 2026)
+export const MENU_TELEMOVEL = [
+  ['Natal', '/natal/'],
+  ['Queimadores', '/loja/queimadores/'],
+  ['Wax melts', '/loja/wax-melts/'],
+  ['Velas', '/loja/velas/'],
+  ['Lembranças', '/lembrancas/'],
+];
 
 function topo(caminho, { simples = false } = {}) {
-  const atual = (h) => (caminho === h || (h !== '/' && caminho.startsWith(h)) || (h === '/loja/' && (caminho.startsWith('/produtos/') || caminho.startsWith('/natal/') || caminho.startsWith('/outono/'))) ? ' aria-current="page"' : '');
+  const atual = (h) => (caminho === h || (h !== '/' && caminho.startsWith(h)) || (h === '/loja/' && (caminho.startsWith('/produtos/') || caminho.startsWith('/outono/'))) ? ' aria-current="page"' : '');
   if (simples) {
     return `<header class="topo topo--simples"><div class="contentor topo__grelha">
   <a class="topo__voltar" href="${url('/carrinho/')}">${icone('voltar', 'icone icone--p')}<span>Carrinho</span></a>
@@ -28,7 +37,9 @@ function topo(caminho, { simples = false } = {}) {
   <div class="topo__dir">
     <a class="topo__botao topo__saco" href="${url('/carrinho/')}" data-abrir-carrinho aria-label="Carrinho">${icone('saco')}<span class="topo__conta" data-conta hidden>0</span></a>
   </div>
-</div></header>`;
+</div>
+<nav class="topo__links" aria-label="Secções">${MENU_TELEMOVEL.map(([n, h]) => `<a href="${url(h)}"${caminho.startsWith(h) ? ' aria-current="page"' : ''}>${n}</a>`).join('')}</nav>
+</header>`;
 }
 
 function menuTelemovel(loja, catalogo) {
@@ -68,8 +79,8 @@ function rodape(loja, catalogo) {
       <p>Queimadores, aromas e lembranças feitos à mão em Oliveira de Azeméis.</p>
       <div class="redes"><a href="https://www.instagram.com/${loja.instagram}/" rel="noopener" aria-label="Instagram da C'Candles">${icone('instagram', 'icone icone--p')}</a><a href="${whatsapp(loja.whatsapp)}" rel="noopener" aria-label="WhatsApp da C'Candles">${icone('whatsapp', 'icone icone--p')}</a></div>
     </div>
-    <div><h2>Loja</h2><ul>${catalogo.categorias.map((c) => `<li><a href="${url(`/loja/${c.id}/`)}">${esc(c.nome)}</a></li>`).join('')}<li><a href="${url('/lembrancas/')}">Lembranças</a></li></ul></div>
-    <div><h2>Ajuda</h2><ul><li><a href="${url('/ajuda/#como-usar')}">Como usar wax melts</a></li><li><a href="${url('/ajuda/')}">Perguntas frequentes</a></li><li><a href="${url('/envios-e-devolucoes/')}">Envios e devoluções</a></li><li><a href="${url('/contactos/')}">Contactos</a></li></ul></div>
+    <div><h2>Loja</h2><ul><li><a href="${url('/natal/')}">Natal</a></li>${catalogo.categorias.map((c) => `<li><a href="${url(`/loja/${c.id}/`)}">${esc(c.nome)}</a></li>`).join('')}<li><a href="${url('/lembrancas/')}">Lembranças</a></li><li><a href="${url('/aromas/')}">Aromas</a></li></ul></div>
+    <div><h2>Ajuda</h2><ul><li><a href="${url('/ajuda/#como-usar')}">Como usar wax melts</a></li><li><a href="${url('/ajuda/')}">Perguntas frequentes</a></li><li><a href="${url('/envios-e-devolucoes/')}">Envios e devoluções</a></li><li><a href="${url('/sobre/')}">Sobre</a></li><li><a href="${url('/contactos/')}">Contactos</a></li></ul></div>
     <div><h2>Encomendas</h2><ul class="rodape__lista">
       <li>${icone('whatsapp', 'icone icone--p')}<a href="${whatsapp(loja.whatsapp)}" rel="noopener">WhatsApp</a></li>
       <li>${icone('instagram', 'icone icone--p')}<a href="https://www.instagram.com/${loja.instagram}/" rel="noopener">@${esc(loja.instagram)}</a></li>

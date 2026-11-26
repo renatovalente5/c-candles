@@ -78,6 +78,8 @@ const dadosBrowser = {
   }])),
   aromas: catalogo.aromas.map((a) => ({ id: a.id, nome: a.nome, cor: a.cor, colecao: a.colecao, frase: a.frase, piramide: a.piramide || null, notas: a.notas || null, foto: a.foto ? fotoMedia(a.foto) : null, fotoNome: a.foto || null })),
   entrega: loja.entrega, whatsapp: loja.whatsapp,
+  // a fotografia da snapbar que aparece na ficha dos queimadores quando se escolhe «Snapbar» (se o aroma não tiver a sua)
+  fotoSnapbar: (() => { const s = lista.find((p) => p.slug === 'snapbar'); return s ? fotoMedia(s.fotos[0]) : null; })(),
 };
 mkdirSync(SAIDA + 'assets/dados', { recursive: true });
 writeFileSync(SAIDA + 'assets/dados/catalogo.json', JSON.stringify(dadosBrowser));
